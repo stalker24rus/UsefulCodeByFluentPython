@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+/env
+*.log
+DockerPostgre
+.env
+.idea
+.DS_Store
