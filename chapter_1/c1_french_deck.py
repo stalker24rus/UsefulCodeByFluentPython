@@ -1,3 +1,32 @@
+"""
+=========================
+=== IDLE and comments ===
+=========================
+
+Try:
+>>> from c1_french_deck import *
+>>> beer_card = Card(rank='7', suit='diamonds')
+>>> beer_card
+    Card(rank='7', suit='diamonds')
+
+>>> deck = FrenchDeck()
+
+>>> len(deck) 
+52
+
+>>> from random import choice                                   # [need know] maybe useful
+>>> choice(deck)
+    Card(rank='9', suit='spades')
+
+>>> Card('Q', 'hearts') in deck
+    True
+
+>>> Card('Q', 'beasts') in deck
+    False
+
+"""
+
+
 # Use collections for your project it is the Pythonic-way.
 import collections
 
@@ -21,30 +50,3 @@ class FrenchDeck:
     def __getitem__(self, position):
         return self._cards[position]
 
-"""
-===================
-=== My comments ===
-===================
-
-Try: 
-    >>> from c1_french_deck import *
-    >>> beer_card = Card(rank='7', suit='diamonds')
-    >>> beer_card
-    Card(rank='7', suit='diamonds')
-    
-    >>> deck = FrenchDeck()
-    >>> len(deck)
-    52
-    
-    >>> from random import choice                                   # [need know] maybe useful
-    >>> choice(deck)
-    Card(rank='9', suit='spades')
-    
-    >>> Card('Q', 'hearts') in deck
-    True
-    >>> Card('Q', 'beasts') in deck
-    False
-
-
-
-"""
